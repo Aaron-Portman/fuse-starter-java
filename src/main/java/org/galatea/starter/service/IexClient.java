@@ -7,6 +7,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
 /**
  * A Feign Declarative REST Client to access endpoints from the Free and Open IEX API to get market
  * data. See https://iextrading.com/developer/docs/
@@ -31,5 +32,4 @@ public interface IexClient {
    */
   @GetMapping("/tops/last")
   List<IexLastTradedPrice> getLastTradedPriceForSymbols(@RequestParam("symbols") String[] symbols);
-
 }
