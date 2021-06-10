@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.galatea.starter.domain.IexHistoricalPrice;
-
 import java.util.List;
 
 @FeignClient(name = "IEXCC", url = "${spring.rest.iexCloudPath}")
